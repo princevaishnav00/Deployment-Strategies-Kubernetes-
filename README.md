@@ -41,7 +41,7 @@ Deployment strategies provide several benefits:
 
 | Deployment Strategy | Documentation |
 | ------------------- | ------------- |
-| Recreate            | Click me      |
-| Rolling Update      | Click me      |
-| Blue-Green          | [Click me](./Blue-Green-deployment/)   |
-| Canary              | Click me      |
+| Recreate            | [Click me](./Recreate-Strategy-deployment/)    |
+| Rolling Update      |  [Click me](./Rolling-Update-deployment/)   |
+| Blue-Green          | [Click me](./Blue-Green-deployment/)    |
+| Canary              |  [Click me](./Canary-deployment/)   |
