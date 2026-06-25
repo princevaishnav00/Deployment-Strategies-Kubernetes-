@@ -43,5 +43,5 @@ Deployment strategies provide several benefits:
 | ------------------- | ------------- |
 | Recreate            | Click me      |
 | Rolling Update      | Click me      |
-| Blue-Green          | Click me   (./Blue-Green-deployment)   |
+| Blue-Green          | Click me   (./Blue-Green-deployment/)   |
 | Canary              | Click me      |
