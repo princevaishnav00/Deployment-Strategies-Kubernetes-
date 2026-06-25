@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: blue-deployment
+  namespace: bluegreen
+  labels:
+    app: nginx
+    version: blue
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: nginx
+      version: blue
+  template:
+    metadata:
+      labels:
+        app: nginx
+        version: blue
+    spec:
+      containers:
+      - image: prince511/nginx-blue:v1
+        name: ngixn-blue-container
+        ports:
+          - containerPort: 80 
+
+
+     
+
+
+

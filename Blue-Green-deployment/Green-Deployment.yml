@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green-deployment
+  namespace: bluegreen
+  labels:
+    app: nginx
+    version: green
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: nginx
+      version: green
+
+  template:
+    metadata:
+      labels:
+        app: nginx
+        version: green
+
+    spec:
+      containers:
+      - name: apache
+        image: prince511/apache-green:v1
+
+        ports:
+        - containerPort: 80
+

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: canary-apache-deployement
+  namespace: canary
+  labels:
+    app: nginx
+    version: canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+      version: canary
+  template:
+    metadata:
+      labels:
+        app: nginx
+        version: canary
+    spec:
+      containers:
+      - image: httpd:latest
+        name: canary-apache
+        ports:
+          - name: http
+            containerPort: 80
+            protocol: TCP
