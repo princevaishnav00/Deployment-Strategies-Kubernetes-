@@ -1,7 +1,7 @@
 Deployment Strategies in kubernetes
 ---
 
-** What is Deployment and Deployment strategies ?**
+What is Deployment and Deployment strategies ?
 
 Deployment is a process of making a application available for use by audience.
 Deployment strategies is a technique for changing/upgrading a running application from one version to another.
