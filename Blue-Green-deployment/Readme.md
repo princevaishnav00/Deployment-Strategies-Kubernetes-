@@ -30,15 +30,18 @@ Architecture Diagram:
 
 # Steps to implement Blue Green deployment
 
-```bash
-kubectl apply -f Blue-Deployment.yml
-kubectl apply -f Green-Deployment.yml
-kubectl apply -f Blue.Green-service.yml
-```
 
 + Create Namespace
 ```bash
 kubectl create ns bluegreen
+```
+
++ Apply the file present in the current directory with name .yaml
+
+```bash
+kubectl apply -f Blue-Deployment.yml
+kubectl apply -f Green-Deployment.yml
+kubectl apply -f Blue.Green-service.yml
 ```
 
 +  Run the command to monitor the deployment & pods & service
