@@ -43,7 +43,13 @@ kubectl get all -n bluegreen
 
 + It will deploy nginx web page (Blue environment) and apache web page (Green environment), now try to access the blue environment (nginx) web page on browser.
 
-URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
+ URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
 
-<img src="./Images/Nginx-Blue.png" alt="Alternative text" width="500">
+  <img src="./Images/Nginx-Blue.png" alt="Alternative text" width="500">
 
+
++ Now, go to the Blue.Green-service.yaml manifest file and edit the service's selector field with green version.
+
+   <img src="./Images/blue-edit.png" alt="Alternative text" width="700">
+
+   <img src="./Images/green-edit.png" alt="Alternative text" width="700">
