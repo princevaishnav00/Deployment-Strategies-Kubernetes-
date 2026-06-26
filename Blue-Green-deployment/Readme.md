@@ -21,7 +21,12 @@
 > This deployment strategy is suitable for Production environment.
 
 
-<img src="./Images/Blue-green-deploy.png" alt="Alternative text" width="500">
+Architecture Diagram:  
+<p align="center">
+ <img src="./Images/Blue-green-deploy.png" alt="Alternative text" width="800">/>
+</p>
+---
+
 
 # Steps to implement Blue Green deployment
 
@@ -45,11 +50,16 @@ kubectl get all -n bluegreen
 
  URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
 
-  <img src="./Images/Nginx-Blue.png" alt="Alternative text" width="500">
+  <img src="./Images/Nginx-Blue.png" alt="Alternative text" width="700">
 
 
 + Now, go to the Blue.Green-service.yaml manifest file and edit the service's selector field with green version.
 
-   <img src="./Images/blue-edit.png" alt="Alternative text" width="700">
+   <img src="./Images/blue-edit.png" alt="Alternative text" width="400">
+   ---
+   <img src="./Images/green-edit.png" alt="Alternative text" width="400">
 
-   <img src="./Images/green-edit.png" alt="Alternative text" width="700">
++ Apply Blue.Green-service..yml
+
+   <img src="./Images/Apache-Green.png" alt="Alternative text" width="700">
+  
