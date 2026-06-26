@@ -36,12 +36,12 @@ kubectl apply -f rolling-deployment.yml
 
 +  run the watch command to monitor the deployment
 ```bash
-kubectl get pod -n rolling
+kubectl get all -n rolling
 ```
 
-<p align="center">
- <img src="./Images/Before-Update.png" alt="Alternative text" width="600">/>
-</p>
+  <p align="center">
+   <img src="./Images/Before-Update.png" alt="Alternative text" width="600">/> 
+  </p>
 
 
 + It will deploy nginx web page, now edit the deployment file and change the image from nginx:latest to httpd:latest and apply again.
@@ -50,6 +50,8 @@ kubectl get pod -n rolling
 kubectl set image deployment/rolling-deployment nginx=httpd:latest -n rolling 
 ```
 
-<p align="center">
- <img src="./Images/After-Update.png" alt="Alternative text" width="600">/>
-</p>
++ Check Immediately go to second tab where ran watch command and monitor (It will delete all the pods and then create new ones).
+
+   <p align="center">
+      <img src="./Images/After-Update.png" alt="Alternative text" width="600">/>
+   </p>
