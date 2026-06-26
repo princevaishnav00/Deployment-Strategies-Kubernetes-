@@ -17,5 +17,8 @@
 | Avoid versioning issue, change entire cluster state in one go | Proper test of entire platform should be done before releasing to the production environment. |
 
 
-# NOTE:
+## NOTE:
 > This deployment strategy is suitable for Production environment.
+
+
+![Blue Green deployment](Image/Blue-Green-Deployment.png)
