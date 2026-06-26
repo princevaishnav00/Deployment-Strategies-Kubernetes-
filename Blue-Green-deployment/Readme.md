@@ -31,4 +31,19 @@ kubectl apply -f Green-Deployment.yml
 kubectl apply -f Blue.Green-service.yml
 ```
 
++ Create Namespace
+```bash
+kubectl create ns bluegreen
+```
+
++  Run the command to monitor the deployment & pods & service
+```bash
+kubectl get all -n bluegreen
+````
+
++ It will deploy nginx web page (Blue environment) and apache web page (Green environment), now try to access the blue environment (nginx) web page on browser.
+
+URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
+
+<img src="./Images/Nginx-Blue.png" alt="Alternative text" width="500">
 
