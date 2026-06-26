@@ -22,3 +22,19 @@ Architecture Diagram:
 </p>
 ---
 
+# Steps to implement Recreate deployment
+
++ + Create Namespace
+```bash
+kubectl create ns roling
+```
+
++ Apply the file present in the current directory with name .yaml
+```bash
+kubectl apply -f rolling-deployment.yml
+```
+
++  run the watch command to monitor the deployment
+```bash
+kubectl get pod -n rolling
+```
