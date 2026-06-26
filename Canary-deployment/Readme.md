@@ -37,15 +37,16 @@ Architecture Diagram:
 
 # Steps to implement canary deployment
 
++ Create Namespace
+```bash
+kubectl create ns canary
+```
+
++ Apply the file present in the current directory with .yaml
 ```bash
 kubectl apply -f apache-canary-deployment.yml.
 kubectl apply -f nginx-canary-deployment.yml.
 kubectl apply -f canary-service.yml.
-```
-
-+ Create Namespace
-```bash
-kubectl create ns canary
 ```
 
 +  Run the command to monitor the deployment & pods & service
