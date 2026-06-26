@@ -53,5 +53,5 @@ kubectl set image deployment/rolling-deployment nginx=httpd:latest -n rolling
 + Check Immediately go to second tab where ran watch command and monitor (It will delete all the pods and then create new ones).
 
    <p align="center">
-      <img src="./Images/After-Update.png" alt="Alternative text" width="600">/>
+      <img src="./Images/After-Update.png" alt="Alternative text" width="600">
    </p>
