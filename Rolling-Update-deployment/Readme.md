@@ -18,7 +18,7 @@
 
 Architecture Diagram:  
 <p align="center">
- <img src="./Images/Rolling-Update-deploy.png" alt="Alternative text" width="800">/>
+ <img src="./Images/Rolling-Update-deploy.png" alt="Alternative text" width="800">
 </p>
 ---
 
@@ -40,7 +40,7 @@ kubectl get all -n rolling
 ```
 
   <p align="center">
-   <img src="./Images/Before-Update.png" alt="Alternative text" width="600">/> 
+   <img src="./Images/Before-Update.png" alt="Alternative text" width="600">/
   </p>
 
 
