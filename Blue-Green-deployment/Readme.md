@@ -55,9 +55,14 @@ kubectl get all -n bluegreen
 
 + Now, go to the Blue.Green-service.yaml manifest file and edit the service's selector field with green version.
 
-   <img src="./Images/blue-edit.png" width="45%"/> <img src="./Images/green-edit.png" width="35%"/>
+   <img src="./Images/blue-edit.png" width="35%"/> <img src="./Images/green-edit.png" width="35%"/>
 
-+ Apply Blue.Green-service..yml
++  Apply Blue.Green-service..yml
+
+ ```bash
+kubectl apply -f Blue.Green-service..yml
+````
+  
 
    <img src="./Images/Apache-Green.png" alt="Alternative text" width="800">
 
