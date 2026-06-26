@@ -24,3 +24,7 @@
 | ------                                | ---------                                                      |
 | Version released for subset of users  | Slow rollout                                                   |
 | Convenient for error rate and performance monitoring | Fine tune traffic distribution can be expensive |
+
+
+## NOTE:
+> This deployment strategy is suitable for Production environment.
