@@ -14,7 +14,7 @@
 
 Architecture Diagram:  
 <p align="center">
- <img src="./Images/Recreate-deployemnt.png" alt="Alternative text" width="800">/>
+ <img src="./Images/Recreate-deployemnt.png" alt="Alternative text" width="800">
 </p>
 ---
 
@@ -38,13 +38,13 @@ kubectl set image deployment/recreate-deployment nginx=httpd:latest -n recreate
 
 + terminates all existing pods.
 <p align="center">
- <img src="./Images/Terminate.png" alt="Alternative text" width="800">/>
+ <img src="./Images/Terminate.png" alt="Alternative text" width="800">
 </p>
 
-+ And Tehn It creates new pods with updated configurations.
++ And Then It creates new pods with updated configurations.
 
 <p align="center">
- <img src="./Images/Creating.png" alt="Alternative text" width="800">/>
+ <img src="./Images/Creating.png" alt="Alternative text" width="800">
 </p>
 
 +  Check Immediately go to second tab where ran watch command and monitor 
