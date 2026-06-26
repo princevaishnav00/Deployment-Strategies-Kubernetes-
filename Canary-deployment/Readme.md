@@ -20,7 +20,7 @@
   + The gradual increase reduces the risk of impacting all users if something goes wrong with the new version.
  
 
-| Pro's  | Con's   |
-| ----- -|--------- |
-| Version released for subset of users  | Slow rollout    |
+| Pro's                                 | Con's                                                          |    
+| ------                                | ---------                                                      |
+| Version released for subset of users  | Slow rollout                                                   |
 | Convenient for error rate and performance monitoring | Fine tune traffic distribution can be expensive |
