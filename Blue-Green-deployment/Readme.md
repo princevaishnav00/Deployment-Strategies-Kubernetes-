@@ -50,14 +50,16 @@ kubectl get all -n bluegreen
 
  URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
 
-  <img src="./Images/Nginx-Blue.png" alt="Alternative text" width="700">
+  <img src="./Images/Nginx-Blue.png" alt="Alternative text" width="800">
 
 
 + Now, go to the Blue.Green-service.yaml manifest file and edit the service's selector field with green version.
 
-   <img src="./Images/blue-edit.png" width="45%"/> <img src="./Images/green-edit.png" width="45%"/>
+   <img src="./Images/blue-edit.png" width="45%"/> <img src="./Images/green-edit.png" width="35%"/>
 
 + Apply Blue.Green-service..yml
 
-   <img src="./Images/Apache-Green.png" alt="Alternative text" width="60%">
+   <img src="./Images/Apache-Green.png" alt="Alternative text" width="800">
+
++ Now, the Green environment becomes the live production environment, and users interact with the new version.
   
