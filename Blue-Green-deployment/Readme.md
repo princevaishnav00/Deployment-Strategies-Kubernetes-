@@ -22,3 +22,13 @@
 
 
 <img src="./Images/Blue-green-deploy.png" alt="Alternative text" width="500">
+
+# Steps to implement Blue Green deployment
+
+```bash
+kubectl apply -f Blue-Deployment.yml
+kubectl apply -f Green-Deployment.yml
+kubectl apply -f Blue.Green-service.yml
+```
+
+
