@@ -28,3 +28,32 @@
 
 ## NOTE:
 > This deployment strategy is suitable for Production environment.
+
+Architecture Diagram:  
+<p align="center">
+ <img src="./Images/canary-deploy.png" alt="Alternative text" width="800">/>
+</p>
+---
+
+# Steps to implement canary deployment
+
+```bash
+kubectl apply -f apache-canary-deployment.yml.
+kubectl apply -f nginx-canary-deployment.yml.
+kubectl apply -f canary-service.yml.
+```
+
++ Create Namespace
+```bash
+kubectl create ns canary
+```
+
++  Run the command to monitor the deployment & pods & service
+```bash
+kubectl get all -n canary
+````
+ <img src="./Images/canary-manifests.png" alt="Alternative text" width="600">
+
++ It will deploy nginx web page and apache web page, now try to access the web page on browser.
+
+ URL : `http://<EC2-PUBLIC-IP>:<nodeport>`
