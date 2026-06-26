@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: canary-apache-deployement
+  name: canary-apache-deployment
   namespace: canary
   labels:
-    app: nginx
+    app: apache
     version: canary
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: webapp
       version: canary
   template:
     metadata:
       labels:
-        app: nginx
+        app: webapp
         version: canary
     spec:
       containers:
-      - image: httpd:latest
+      - image: prince511/apache-green:v1
         name: canary-apache
         ports:
           - name: http
