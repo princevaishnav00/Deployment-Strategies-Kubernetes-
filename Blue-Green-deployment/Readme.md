@@ -59,6 +59,8 @@ kubectl get all -n bluegreen
    ---
    <img src="./Images/green-edit.png" alt="Alternative text" width="400">
 
+   <img src="./Images/blue-edit.png" width="45%"/> <img src="./Images/green-edit.png" width="45%"/>
+
 + Apply Blue.Green-service..yml
 
    <img src="./Images/Apache-Green.png" alt="Alternative text" width="700">
