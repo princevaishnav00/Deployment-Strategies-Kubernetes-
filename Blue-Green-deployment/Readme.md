@@ -21,4 +21,4 @@
 > This deployment strategy is suitable for Production environment.
 
 
-![Blue Green deployment](Image/Blue-Green-Deployment.png)
+![Blue Green deployment](Images/Blue-green-deploy.png)
