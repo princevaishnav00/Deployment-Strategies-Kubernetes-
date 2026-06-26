@@ -24,7 +24,7 @@ Architecture Diagram:
 
 # Steps to implement Recreate deployment
 
-+ + Create Namespace
++ Create Namespace
 ```bash
 kubectl create ns roling
 ```
@@ -38,3 +38,18 @@ kubectl apply -f rolling-deployment.yml
 ```bash
 kubectl get pod -n rolling
 ```
+
+<p align="center">
+ <img src="./Images/Before-Update.png" alt="Alternative text" width="600">/>
+</p>
+
+
++ It will deploy nginx web page, now edit the deployment file and change the image from nginx:latest to httpd:latest and apply again.
+
+```bash
+kubectl set image deployment/rolling-deployment nginx=httpd:latest -n rolling 
+```
+
+<p align="center">
+ <img src="./Images/After-Update.png" alt="Alternative text" width="600">/>
+</p>
